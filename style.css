@@ -1,0 +1,47 @@
+body {
+  background: linear-gradient(130deg, #b22f25, #131518, #5e9a41);
+  color: white;
+}
+nav {
+  height: 30px;
+  background-color: rgb(136, 128, 128);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  margin: 25px;
+}
+
+#wiki {
+  color: greenyellow;
+}
