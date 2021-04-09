@@ -1,20 +1,31 @@
 body {
+  width: 100%;
   background: linear-gradient(130deg, #b22f25, #131518, #5e9a41);
   color: white;
 }
 nav {
   height: 30px;
+  width: 100%;
   background-color: rgb(136, 128, 128);
   display: flex;
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 30;
+  overflow-x: scroll;
 }
 nav ul {
   width: 100%;
+  margin: 10px;
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+nav ul li {
+  margin: 5px;
+  position: relative;
+  left: 15%;
 }
 
 a {
@@ -32,16 +43,78 @@ p {
 }
 
 figure {
+  width: 60%;
+  position: relative;
+  left: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+figure img {
+  width: 300px;
+  position: relative;
+  right: 20%;
+}
 figcaption {
   margin: 25px;
+  position: relative;
+  right: 20%;
 }
 
 #wiki {
   color: greenyellow;
+}
+
+.sections {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background: linear-gradient(130deg, #b22f25, #131518, #5e9a41);
+    color: white;
+  }
+  nav {
+    height: 30px;
+    background-color: rgb(136, 128, 128);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h1 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figcaption {
+    margin: 25px;
+  }
 }
